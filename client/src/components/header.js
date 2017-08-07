@@ -7,7 +7,7 @@ class Header extends Component {
     if(this.props.authenticated) {
       //show a link to sign out
       return <li>
-        <Link to="/signout">Sign Out</Link>
+        <Link className="login-button" style={{ background: 'pink' }} to="/signout">Sign Out</Link>
       </li>
     } else {
         //show a link to user to sign in or sign up

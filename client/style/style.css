@@ -129,6 +129,24 @@ ul {
   color: red;
 
 }
+
+.feature {
+  display: flex;
+  width: 50%
+  height: 50%
+}
+
+.feature-data{
+  padding: 5px;
+  margin: 8px;
+  background-color: #ffde00;
+  color: #333;
+  display: inline-block;
+  font-family: monospace;
+  font-size: 32px;
+  text-align: center;
+}
+
 #header {
   text-align: center;
   font-family: 'Questrial', sans-serif;

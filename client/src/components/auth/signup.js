@@ -7,8 +7,6 @@ class Signup extends Component {
   handleFormSubmit(formProps) {
     //Call Action creator to sign up user
     this.props.signupUser(formProps);
-    e.preventDefault()
-    return false;
   };
 
   renderAlert(){
@@ -83,9 +81,9 @@ function validate(formProps){
   return errors;
 }
 
-// function mapStateToProps(state){
-//   return { errorMessage: state.auth.error };
-// }
+function mapStateToProps(state){
+  return { errorMessage: state.auth.error };
+}
 
 // Signup = connect(mapStateToProps, actions)(Signup)
 
@@ -93,4 +91,4 @@ export default reduxForm({
   form: 'signup',
   fields: ['username', 'password', 'passwordConfirm'],
   validate: validate
-})(Signup);
+}, mapStateToProps, actions)(Signup);
