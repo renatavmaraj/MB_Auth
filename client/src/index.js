@@ -16,10 +16,6 @@ import reducers from './reducers';
 
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
 
-/*
-Whenever we nest a route, like signin inside App, the parent route
-is provided the nested route as props.children
-*/
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
     <Router history={browserHistory}>
