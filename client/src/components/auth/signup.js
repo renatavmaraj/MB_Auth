@@ -41,7 +41,7 @@ class Signup extends Component {
         </div>
 
         <div className="form-field">
-          <label className="lock"> Confirm Password: </label>
+          <label className="lock" id="confirm">Confirm Pw: </label>
           <input type="password" className="login-password" className="form-input" {...passwordConfirm} />
         </div>
         <div className="error">

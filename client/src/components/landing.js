@@ -1,3 +1,3 @@
 import React from 'react';
 
-export default () => <div className="logo">Welcome to the Maidbot portal!</div>
+export default () => <div className="goodbye-message">Welcome to the Maidbot portal!</div>

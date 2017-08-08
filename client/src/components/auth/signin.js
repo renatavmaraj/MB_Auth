@@ -26,7 +26,7 @@ class Signin extends Component {
       <form className="form-login" onSubmit={handleSubmit(this.handleFormSubmit.bind(this))} >
         {this.renderAlert()}
         <div className="form-field">
-          <label className="user">username: </label>
+          <label className="user">Username: </label>
           <input type="text" id="login-username" className="form-input" {...username} />
         </div>
 
