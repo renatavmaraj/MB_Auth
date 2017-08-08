@@ -71,16 +71,20 @@ ul {
   padding: 20px;
 }
 
-#confirm {
+.lock .confirm {
   padding:1px;
 }
+
 .form-login label {
+  box-sizing: border-box;
+  padding: 0 5px;
   background-color: #222222;
   width: 100px;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  text-align: right;
+  justify-content: space-around;
   color: rgb(80,80,80);
   text-shadow: 1px 1px 1px rgb(40,40,40);
 }
