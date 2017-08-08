@@ -9,9 +9,19 @@ const router = require('./router');
 const mongoose = require('mongoose');
 const cors = require('cors');
 
-//DB Setup
-//Creates a new DB called auth
-mongoose.connect('mongodb://localhost:auth/auth');
+
+
+//console.log("BEFORE CONNECTION")
+mongoose.connect('mongodb://renata:test@ds143737.mlab.com:43737/mbot2');
+
+// var conn = mongoose.connection;
+// console.log("thisisConn: ", conn)
+//conn.on(‘error’, console.error.bind(console, ‘connection error:‘));
+
+// conn.once(‘open’, function() {
+//   // Wait for the database connection to establish, then start the app.
+//   console.log('openLogged')
+// });
 
 //App Setup
 app.use(morgan('combined'));
